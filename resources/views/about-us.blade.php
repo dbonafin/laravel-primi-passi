@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First laravel project</title>
+    <title>About us page</title>
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -28,25 +28,10 @@
             margin: 0 10px;    
         }
 
-        .content {
+        .about-text {
             text-align: center;
-        }
-
-        .title {
-            font-size: 80px;
-        }
-
-        .bottom {
-            height: 60vh;
-            align-items: self-end;
-        }
-
-        .links {
             width: 50%;
-            margin: auto;
-            margin-top: 100px;
-            display: flex;
-            justify-content: space-evenly;
+            margin: 0 auto;
         }
 
         .links > a {
@@ -60,32 +45,18 @@
 </head>
 
 <body>
+    <h2 class="flex-center">About us</h2>
 
-    <!-- Title -->
-    <header class="flex-center">
-        <h1>First Laravel Project Homepage</h1> <br>
-    </header>
+    <div class="flex-center about-text">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consectetur amet vitae maxime iste et, culpa sapiente. Quos eum magni impedit! Perferendis quod harum qui officiis vitae quisquam, iusto inventore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consectetur amet vitae maxime iste et, culpa sapiente. Quos eum magni impedit! Perferendis quod harum qui officiis vitae quisquam, iusto inventore? <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consectetur amet vitae maxime iste et, culpa sapiente. Quos eum magni impedit! Perferendis quod harum qui officiis vitae quisquam, iusto inventore?
+        </p>
+    </div>
 
-
-    <!-- Navigation area -->
-    <main class="flex-center">
-
-        <div class="links">
-            <a href="{{ route('about-us') }}">about us</a>
-
-            <a href="{{ route('contacts') }}">contacts</a>
-
-            <a href="{{ route('documentation') }}">documentation</a>
-        </div>
-
-    </main>
-
-    <!--  -->
-    <footer class="flex-center bottom">
-        <h3>Created by {{ $author }}</h3>
-        |
-        <h3>Powered by {{ $framework }}</h3>
-    </footer>
-    
+    <div class="flex-center links">
+        <a href="{{ route('home') }}">Torna alla homepage</a>
+    </div>
 </body>
 </html>
