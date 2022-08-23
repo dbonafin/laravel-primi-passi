@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $data = [
+        'author' => 'dbonafin',
+        'framework' => 'laravel'
+    ];
+
+    return view('home', $data);
 });
